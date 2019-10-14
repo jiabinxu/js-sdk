@@ -105,8 +105,10 @@ class Compress {
         canvas.width = width;
         canvas.height = height;
         this.clear(context, width, height);
+        context.save();
         context.transform(...matrix);
         context.drawImage(img, 0, 0);
+        context.restore();
         resolve(canvas);
       });
     });
