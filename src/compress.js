@@ -32,7 +32,7 @@ class Compress {
   process() {
     this.outputType = this.file.type;
     let srcDimension = {};
-    if (!isSupportedType(this.file.type)) {
+    if ( this.file.type &&!isSupportedType(this.file.type)) {
       return Promise.reject(new Error(`unsupported file type: ${this.file.type}`));
     }
 
