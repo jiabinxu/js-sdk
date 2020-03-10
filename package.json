@@ -1,7 +1,7 @@
 {
   "name": "primary-qiniu-js",
   "jsName": "qiniu",
-  "version": "2.5.5",
+  "version": "2.5.6",
   "private": false,
   "description": "Javascript SDK for Qiniu Resource (Cloud) Storage AP",
   "main": "dist/qiniu.min.js",
@@ -29,7 +29,9 @@
       "email": "zhangheng01@qiniu.com"
     }
   ],
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
