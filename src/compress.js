@@ -30,17 +30,19 @@ class Compress {
   }
 
   process() {
-    this.outputType = this.file.type;
+    // this.outputType = this.file.type;
     console.log('this.file.type',this.file.type)
-    if(!this.file.type){
+    // if(!this.file.type){
       const nameArray = this.file.name.split('.')
       const fileSuffix = nameArray[nameArray.length-1]
       this.outputType = 'image/' + fileSuffix ==='jpg'?'jpeg':fileSuffix
-    }
+    // }
     console.log('outputType',this.outputType)
     let srcDimension = {};
+    alert('fileType:'+ this.file.type +'outputType'+ this.outputType )
     if ( this.file.type &&!isSupportedType(this.file.type)) {
-      return Promise.reject(new Error(`unsupported file type: ${this.file.type}`));
+      
+      return Promise.reject(new Error(`unsupported outputType: ${this.outputType}`));
     }
 
     return this.getOriginImage()
