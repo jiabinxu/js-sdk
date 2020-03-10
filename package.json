@@ -1,5 +1,5 @@
 {
-  "name": "primary-qiniu-js",
+  "name": "@guanghe/primary-qiniu-js",
   "jsName": "qiniu",
   "version": "2.5.6",
   "private": false,
@@ -30,7 +30,7 @@
     }
   ],
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.yc345.tv/"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
